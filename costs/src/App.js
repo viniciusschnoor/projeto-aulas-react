@@ -4,6 +4,7 @@ import Company from './components/pages/Company';
 import Contact from './components/pages/Contact';
 import NewProject from './components/pages/NewProject';
 import Container from './components/layout/Container';
+import Footer from './components/layout/Footer';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
             <Route path="/newproject" element={<NewProject />} />
         </Routes>
       </Container>
-      <p>2022 &#9211; ./vschn.dev</p>
+      <Footer />
     </BrowserRouter>
   );
 }
