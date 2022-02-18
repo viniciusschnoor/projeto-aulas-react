@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Home from './components/pages/Home';
 import Company from './components/pages/Company';
 import Contact from './components/pages/Contact';
@@ -8,7 +8,7 @@ import Footer from './components/layout/Footer';
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <div>
         <Link to="/">Home</Link>
         <Link to="/company">Company</Link>
@@ -24,7 +24,7 @@ function App() {
         </Routes>
       </Container>
       <Footer />
-    </BrowserRouter>
+    </Router>
   );
 }
 
